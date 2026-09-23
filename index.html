@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="user-section">
+    <h1>Welcome to the Personal Expense Tracker</h1>
+    <form id="user-form">
+      <label for="username">Enter Your Name:</label>
+      <input type="text" id="username" placeholder="e.g., Arush" required>
+      <button type="submit">Start</button>
+    </form>
+  </section>
+
+  <div id="expense-tracker" style="display: none;">
+    <header>
+      <h1 id="welcome-message">Expense Tracker</h1>
+    </header>
+    
+    <main>
+      <section id="form-section">
+        <h2>Add Earning</h2>
+        <form id="earning-form">
+          <label for="earning-source">Earning Source:</label>
+          <input type="text" id="earning-source" placeholder="e.g., Salary" required>
+          
+          <label for="earning-amount">Amount (₹):</label>
+          <input type="number" id="earning-amount" placeholder="e.g., 5000" required>
+          
+          <button type="submit">Add Earning</button>
+        </form>
+      </section>
+
+      <section id="form-section">
+        <h2>Add Expense</h2>
+        <form id="expense-form">
+          <label for="expense-name">Expense Name:</label>
+          <input type="text" id="expense-name" placeholder="e.g., Groceries" required>
+          
+          <label for="expense-category">Category:</label>
+          <select id="expense-category" required>
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Other">Other</option>
+          </select>
+          
+          <label for="expense-amount">Amount (₹):</label>
+          <input type="number" id="expense-amount" placeholder="e.g., 500" required>
+          
+          <button type="submit">Add Expense</button>
+        </form>
+      </section>
+      
+      <section id="expense-list-section">
+        <h2>Expense List</h2>
+        <ul id="expense-list"></ul>
+      </section>
+      
+      <section id="earning-list-section">
+        <h2>Earning List</h2>
+        <ul id="earning-list"></ul>
+      </section>
+      
+      <section id="total-section">
+        <h2>Total Expenses: ₹<span id="total-expenses">0</span></h2>
+        <h2>Total Earnings: ₹<span id="total-earnings">0</span></h2>
+        <h2>Total Money Left: ₹<span id="total-money-left">0</span></h2>
+      </section>
+    </main>
+    
+    <footer>
+      <p>Made by Sarthak Atri </p>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
