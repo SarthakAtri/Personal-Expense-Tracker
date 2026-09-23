@@ -37,3 +37,7 @@ Personal-Expense-Tracker/
 ├── styles.css
 ├── script.js
 └── README.md
+
+# 💰 Personal Expense Tracker
+
+Made with by **Sarthak Atri** | HTML • CSS • JavaScript
